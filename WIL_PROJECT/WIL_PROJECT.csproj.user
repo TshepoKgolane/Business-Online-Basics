@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="DashBoard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Driver.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OfficeManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReportSheet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReportSheet1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="serviceManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ServiceSheet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SignIn.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SignUpInterface.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TripManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TripSheet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VehicleInformationManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VehicleStatus.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="DashBoard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Driver.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OfficeManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReportSheet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReportSheet1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="serviceManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ServiceSheet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SignIn.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SignUpInterface.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TripManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TripSheet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VehicleInformationManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VehicleStatus.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

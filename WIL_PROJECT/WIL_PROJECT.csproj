@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="car.jpeg" />
+    <None Remove="fede.jpg" />
+    <None Remove="home.jpeg" />
+    <None Remove="icons8-exit-25.png" />
+    <None Remove="icons8-menu-25.png" />
+    <None Remove="icons8-report-25.png" />
+    <None Remove="icons8-route-25.png" />
+    <None Remove="icons8-service-25.png" />
+    <None Remove="Logo.jpg" />
+    <None Remove="Mad.png" />
+    <None Remove="Menu.jpg" />
+    <None Remove="SignUp.xaml.cs~RFa451cb.TMP" />
+    <None Remove="VehicleIcon.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="car.jpeg" />
+    <Resource Include="fede.jpg" />
+    <Resource Include="home.jpeg" />
+    <Resource Include="icons8-exit-25.png" />
+    <Resource Include="icons8-menu-25.png" />
+    <Resource Include="icons8-report-25.png" />
+    <Resource Include="icons8-route-25.png" />
+    <Resource Include="icons8-service-25.png" />
+    <Resource Include="Logo.jpg" />
+    <Resource Include="Mad.png" />
+    <Resource Include="Menu.jpg" />
+    <Resource Include="VehicleIcon.jpg" />
+  </ItemGroup>
+
+</Project>

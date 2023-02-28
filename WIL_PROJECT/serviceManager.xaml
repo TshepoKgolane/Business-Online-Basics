@@ -1,0 +1,168 @@
+﻿<Window x:Class="WIL_PROJECT.serviceManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WIL_PROJECT"
+        mc:Ignorable="d"
+        Title="serviceManager" Height="650" Width="800"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="#181735">
+    <Grid>
+
+        <Grid x:Name="PanelHeader" VerticalAlignment="Top"
+              Height="50"
+              Background="#0F0F2D" >
+
+            <TextBlock Text="Business-Online-Basics"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Foreground="White"
+                       FontSize="18"
+                       FontWeight="Medium"
+                       FontFamily="Fonts/#Nunito"
+                       Margin="20,0,0,0"/>
+
+            <Button Content="Reset"
+                        Foreground="Black"
+                        HorizontalAlignment="Right"
+                        FontSize="18"
+                        FontWeight="Medium"
+                        Margin="0,0,15,0"
+                        Grid.Column="12"
+                        Grid.ColumnSpan="2" Click="Button_Click">
+
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="TextElement.FontFamily" Value="Fonts/#Nunito"/>
+                        <Setter Property="Background" Value="Aqua"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Aquamarine"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="100" Height="25"
+                                    CornerRadius="16"
+                                    Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Grid>
+
+        <Label Content="Service Manager Page"
+               HorizontalAlignment="Center"
+               Margin="0,51,0,0"
+               Foreground="White"
+               FontSize="24"
+               FontWeight="Medium"
+               FontFamily="Fonts/#Nunito"
+               VerticalAlignment="Top"/>
+
+        <Label Content="Sceduled Appointments"
+               HorizontalAlignment="Center"
+               Margin="0,94,0,0"
+               Foreground="White"
+               FontSize="24"
+               FontWeight="Medium"
+               FontFamily="Fonts/#Nunito"
+               VerticalAlignment="Top"/>
+        <ListView x:Name="listServiceMan" Margin="38,142,38,249">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="36,448,0,0"
+                   Text="Schedule An Appointment"
+                   Foreground="White"
+                   FontSize="20"
+                   FontFamily="Fonts/#Nunito"
+                   FontWeight="Medium"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top"/>
+
+        <Button x:Name="btnDashboard" Content="Dashboard"
+                        Foreground="White"
+                        FontSize="25"
+                        FontWeight="Medium"
+                        Margin="470,507,86,32" Click="Button_Click_1"
+                        >
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="TextElement.FontFamily" Value="Fonts/#Nunito"/>
+                    <Setter Property="Background" Value="#39385D"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Black"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Width="175" Height="45"
+                                    CornerRadius="18"
+                                    Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+        <Button x:Name="btnSchedule" Content="Schedule"
+                        Foreground="Black"
+                        FontSize="25"
+                        FontWeight="Medium"
+                        Margin="65,535,545,60" Click="Button_Click_2"
+                        >
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="TextElement.FontFamily" Value="Fonts/#Nunito"/>
+                    <Setter Property="Background" Value="Aqua"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Aquamarine"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Width="125" Height="35"
+                                    CornerRadius="18"
+                                    Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <DatePicker x:Name="dtAppointment" HorizontalAlignment="Left" Margin="38,480,0,0" VerticalAlignment="Top" Height="34" Width="244"/>
+
+
+
+
+    </Grid>
+</Window>
